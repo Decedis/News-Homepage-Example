@@ -78,8 +78,8 @@ ul {
 .side-panel .article-snippet p {
     color: lightgrey;
 }
-.side-panel br{
-    
+.side-panel hr{
+    width: 100%;
 }
 .pop-preview {
     display: flex;
