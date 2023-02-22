@@ -13,11 +13,6 @@
     z-index: 15;
     display: none;
 }
-.navbar-toggler span{
-    color: black;
-    cursor: pointer;
-    pointer-events: none;
-}
 /* [aria-controls="navbarDropdown"]{
     display: none;
 } */
