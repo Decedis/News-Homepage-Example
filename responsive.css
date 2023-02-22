@@ -7,6 +7,10 @@
 @media (max-width: 768px) {
     nav{
         margin-top: 2rem;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        background-color: white;
     }
     /* [aria-controls="navbarDropdown"]{
         display: block;
@@ -38,6 +42,12 @@
     ul {
         flex-direction: column;
         display: none;
+
+        position: absolute;
+        right: 0;
+        background-color: white;
+        padding: 1.2rem;
+        top: 35px;
     }
     .article-preview{
         flex-direction: column;

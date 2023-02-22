@@ -3,9 +3,9 @@
 
 /* Navbar toggler section*/
 .navbar-toggler{
-    position: relative; /*was absolute*/
+    position: relative;
     right: 20px;
-    top: 10px;
+    top: -20px;
     outline: none;
     background-color: transparent;
     border: 1px solid transparent;
@@ -38,6 +38,9 @@ nav{
     margin-top: 5rem;
     grid-column: 1 / 4;
     grid-row: 1 / 2;
+}
+.brand-logo{
+    margin: 0;
 }
 .img-container {
     grid-column: 1 / 3;
