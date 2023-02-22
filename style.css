@@ -1,6 +1,31 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+/* Navbar toggler section*/
+.navbar-toggler{
+    position: relative; /*was absolute*/
+    right: 20px;
+    top: 10px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 4rem;
+    z-index: 15;
+    display: none;
+}
+.navbar-toggler span{
+    color: black;
+    cursor: pointer;
+    pointer-events: none;
+}
+/* [aria-controls="navbarDropdown"]{
+    display: none;
+} */
+/*End Section*/
+
+
+a { color: black; }
+a:hover { color: #f75f53 }
 ul {
     display: flex;
     gap: 2rem;
@@ -12,7 +37,7 @@ ul {
     grid-template-rows: auto;
     margin: 4rem;
 }
-.nav{
+nav{
     display: flex;
     justify-content: space-between;
     margin-top: 5rem;
@@ -84,4 +109,16 @@ ul {
 .pop-preview {
     display: flex;
     gap: 1rem;
+}
+.pop-preview .article-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pop-preview .article-info h4 {
+    color: gray;
+    font-size: 2rem;
+}
+.pop-preview .article-info h5 {
+    font-size: 1.2rem;
 }

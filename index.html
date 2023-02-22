@@ -8,22 +8,29 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="default.css">
   <link rel="stylesheet" href="responsive.css">
-  <title>News homepage</title>
+  <title>News Homepage</title>
 </head>
 <body>
   <div class="main-container">
-    <div class="nav">
+
+    <nav>
       <div class="brand-logo">
         <img src="/assets/images/logo.svg" alt="brand logo">
       </div>
-      <ul>
+      <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+        <span>
+          <img id="nav-icon" src="assets/images/icon-menu.svg" alt="menu icon" onclick="changeImage()">
+        </span>
+      </button>
+      <ul id="nav-links">
         <li><a href="#"> Home </a> </li>
         <li><a href="#"> New </a> </li>
         <li><a href="#"> Popular </a> </li>
         <li><a href="#"> Trending </a> </li>
         <li><a href="#"> Categories </a> </li>
       </ul>
-    </div>
+    </nav>
+
     <div class="img-container">
       <img class="banner-image" src="/assets/images/image-web-3-desktop.jpg" alt="web 3">
     </div>
@@ -68,7 +75,11 @@
         <img src="/assets/images/image-retro-pcs.jpg" alt="">
         <div class="article-info">
           <h4>01</h4>
-          <h5>Reviving Retro PCs</h5>
+          <h5>
+            <a href="#">
+              Reviving Retro PCs
+            </a>
+          </h5>
           <div class="sub-header">
             What happens when old PCs are given modern upgrades?
           </div>
@@ -78,7 +89,11 @@
         <img src="/assets/images/image-top-laptops.jpg" alt="">
         <div class="article-info">
           <h4>02</h4>
-          <h5>Top 10 Laptops of 2022</h5>
+          <h5>
+            <a href="#">
+              Top 10 Laptops of 2022
+            </a>
+          </h5>
           <div class="sub-header">
             Our best picks for various needs and budgets.
           </div>
@@ -88,7 +103,11 @@
         <img src="/assets/images/image-gaming-growth.jpg" alt="">
         <div class="article-info">
           <h4>03</h4>
-          <h5>The Growth of Gaming</h5>
+          <h5>
+            <a href="#">
+              The Growth of Gaming
+            </a> 
+          </h5>
           <div class="sub-header">
             How the pandemic has sparked fresh opportunities.
           </div>
@@ -97,6 +116,28 @@
     </div>
  
   
+
+
+    <script>
+      // const navButton = document.querySelector('button[aria-expanded]');
+      // function toggleNav({ target }){
+      //   const expanded = target.getAttribute('aria-expanded' === true || false );
+      //   navButton.setAttribute('aria-expanded', !expanded);
+      // }
+      // navButton.addEventListener('click', toggleNav);
+
+      let image =  document.getElementById("nav-icon");
+      let links =  document.getElementById("nav-links");
+      function changeImage() {
+          if (image.getAttribute('src') == "assets/images/icon-menu.svg") {
+              image.src = "assets/images/icon-menu-close.svg";
+              links.style.display = 'flex';
+          } else {
+              image.src = "assets/images/icon-menu.svg";
+              links.style.display = 'none';
+          }
+      }
+    </script>
   
   
 

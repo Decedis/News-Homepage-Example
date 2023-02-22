@@ -5,6 +5,40 @@
     }  
 }
 @media (max-width: 768px) {
+    nav{
+        margin-top: 2rem;
+    }
+    /* [aria-controls="navbarDropdown"]{
+        display: block;
+    }
+    [aria-expanded="false"] ~ ul {
+        display: none;
+    }
+    [aria-expanded="true"] ~ ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: white;
+        max-width: 70%;
+        height: 100%;
+        box-shadow: 0px 0px 20px rgba(52,49,75,0.1);
+        padding: 2rem;
+        min-width: 60%;
+    }
+    [aria-expanded="true"] ~ ul li a{
+        margin-right: 20px;
+        
+    } */
+    .navbar-toggler {
+        display: block;
+    }
+    ul {
+        flex-direction: column;
+        display: none;
+    }
     .article-preview{
         flex-direction: column;
     }
