@@ -1,4 +1,8 @@
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 2rem;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /* Navbar toggler section*/
@@ -107,6 +111,8 @@ nav{
 .pop-preview {
     display: flex;
     gap: 1rem;
+    max-height: 15rem;
+    max-width: 25rem;
 }
 .pop-preview .article-info {
     display: flex;
@@ -116,7 +122,9 @@ nav{
 .pop-preview .article-info h4 {
     color: gray;
     font-size: 2rem;
+    margin-bottom: 0;
 }
 .pop-preview .article-info h5 {
     font-size: 1.2rem;
+    margin: 0;
 }

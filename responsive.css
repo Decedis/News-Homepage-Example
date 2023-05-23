@@ -42,12 +42,14 @@
     ul {
         flex-direction: column;
         display: none;
+         
 
         position: absolute;
         right: 0;
         background-color: white;
         padding: 1.2rem;
-        top: 35px;
+        top: 60px;
+        transition: 0.4s;
     }
     .article-preview{
         flex-direction: column;
